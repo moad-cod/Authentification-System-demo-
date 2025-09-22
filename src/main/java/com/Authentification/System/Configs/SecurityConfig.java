@@ -1,4 +1,4 @@
-package com.Authentification.System.Config;
+package com.Authentification.System.Configs;
 
 import java.util.Arrays;
 
