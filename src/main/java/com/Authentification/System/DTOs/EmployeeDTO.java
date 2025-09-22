@@ -1,6 +1,7 @@
 package com.Authentification.System.DTOs;
-import com.Authentification.System.Entity.Employee;
 
+import com.Authentification.System.Entity.Employee;
+import com.Authentification.System.Enum.role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
@@ -23,7 +24,7 @@ public class EmployeeDTO {
     private String password;
 
     @NotEmpty(message = "Role is required")
-    private String role;    
+    private role role;
 
     public EmployeeDTO(Employee employee) {
         this.id = employee.getId();
@@ -47,9 +48,9 @@ public class EmployeeDTO {
 
     public boolean isValid() {
         return firstName != null && !firstName.isEmpty() &&
-               lastName != null && !lastName.isEmpty() &&
-               email != null && !email.isEmpty() &&
-               password != null && !password.isEmpty() &&
-               role != null && !role.isEmpty();
+                lastName != null && !lastName.isEmpty() &&
+                email != null && !email.isEmpty() &&
+                password != null && !password.isEmpty() &&
+                role != null;
     }
 }
