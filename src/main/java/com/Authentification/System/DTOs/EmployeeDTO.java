@@ -4,9 +4,13 @@ import com.Authentification.System.Entity.Employee;
 import com.Authentification.System.Enum.role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class EmployeeDTO {
     private Long id;
 
