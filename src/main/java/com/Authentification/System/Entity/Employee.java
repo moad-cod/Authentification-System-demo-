@@ -1,6 +1,7 @@
 package com.Authentification.System.Entity;
 
 import jakarta.persistence.Entity;
+import com.Authentification.System.DTOs.EmployeeDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,4 +21,8 @@ public class Employee {
     private String email;
     private String password;
     private String role;
+
+    public EmployeeDTO toDTO() {
+        return new EmployeeDTO(this);
+    }
 }
