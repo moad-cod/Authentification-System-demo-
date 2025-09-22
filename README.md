@@ -3,7 +3,7 @@
 ![Spring Initializr Setup](/public/springInitializr.png)
 *Spring Boot project setup with dependencies*
 
-![Postman JWT Test](/public/JWT.png)
+![Postman JWT Test](/public/image.png)
 *Postman test showing JWT authentication in action*
 
 This project is a **JWT-based authentication system** built with **Spring Boot 3**, **Spring Security 6**, and **PostgreSQL**, fully compatible with **Java 21**.  
