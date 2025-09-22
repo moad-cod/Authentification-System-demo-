@@ -24,6 +24,15 @@ public class Employee {
     private String password;
     private role role;
 
+    public Employee(EmployeeDTO employeeDTO) {
+        this.id = employeeDTO.getId();
+        this.firstName = employeeDTO.getFirstName();
+        this.lastName = employeeDTO.getLastName();
+        this.email = employeeDTO.getEmail();
+        this.password = employeeDTO.getPassword();
+        this.role = employeeDTO.getRole();
+    }
+
     public EmployeeDTO toDTO() {
         return new EmployeeDTO(this);
     }
